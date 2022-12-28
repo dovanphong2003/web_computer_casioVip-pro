@@ -22,6 +22,7 @@ value.forEach((item) => {
         const arr = result.value.split("");
         for (let i = 0; i < arr.length - 1; i++) {
           if (
+            arr[i] !== "0" &&
             arr[i] !== "1" &&
             arr[i] !== "2" &&
             arr[i] !== "3" &&
@@ -39,6 +40,7 @@ value.forEach((item) => {
             arr[i] !== "="
           ) {
             if (
+              arr[i + 1] !== "0" &&
               arr[i + 1] !== "1" &&
               arr[i + 1] !== "2" &&
               arr[i + 1] !== "3" &&
