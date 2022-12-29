@@ -56,7 +56,7 @@ value.forEach((item) => {
               arr[i + 1] !== "-" &&
               arr[i + 1] !== "="
             ) {
-              return (result.value = "dữ liệu nhập không đc chứa chữ cái");
+              return (result.value = "dữ liệu nhập ko đc chứa chữ cái");
             }
           } else if (
             arr[i] === "*" ||
