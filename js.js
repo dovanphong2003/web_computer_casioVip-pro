@@ -9,7 +9,6 @@ setInterval(function () {
   }, 1000);
 }, 400);
 setInterval(function () {
-  console.log(1111);
   result.classList.toggle("yellow");
 }, 200);
 result.addEventListener("click", function () {});
@@ -79,6 +78,12 @@ value.forEach((item) => {
           }
         }
         result.value = eval(result.value);
+      }
+    } else if (item.textContent.trim() == "DEL") {
+      const arr = result.value.split("");
+      if (arr.length > 0) {
+        arr.pop();
+        result.value = arr.join("");
       }
     } else if (item.textContent.trim() == "C") {
       result.value = "";
